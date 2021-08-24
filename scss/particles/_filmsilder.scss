@@ -1,0 +1,111 @@
+body {
+	min-height: 100vh;
+	overflow-x: hidden;
+	background-color: $color-menu;
+	box-shadow: inset 0 0 190px 150px rgb(10, 10, 10);
+	background-image: url("https://www.tuwroclaw.com/pliki/duze_zdjecia/muzyka/chaplin.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	@media (max-width: 850px) {
+		min-height: 130vh;
+	}
+}
+
+.swiper {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	overflow-x: hidden;
+	padding-bottom: 20px;
+	@media (max-width: 835px) {
+		position: static;
+		margin-top: 90px;
+	}
+}
+
+.swiper-slide {
+	background-position: center;
+	background-size: cover;
+	width: 350px;
+	height: 250px;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.charli-info {
+	@include container;
+}
+
+.charli {
+	margin-top: 80px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.chaplin {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	@media (max-width: 800px) {
+		flex-direction: column;
+	}
+}
+
+.biography {
+	flex-basis: 50%;
+	line-height: 1.7;
+	letter-spacing: 0.8px;
+	&__title {
+		color: $color;
+		font-size: $font-titleSize;
+		font-family: $font-titleFamily;
+	}
+	&__subtitle {
+		color: $color;
+		font-size: $font-subtitleSize;
+		font-family: $font-titleFamily;
+	}
+	&__text {
+		color: #fff;
+		font-family: $font-titleFamily;
+		align-self: center;
+		margin-left: 10px;
+		@media (max-width: 1024px) {
+			margin-left: 20px;
+			align-self: center;
+		}
+		@media (max-width: 800px) {
+			align-self: center;
+			margin-right: 20px;
+		}
+	}
+}
+
+.filmography {
+	flex-basis: 50%;
+	line-height: 1.7;
+	letter-spacing: 0.8px;
+	&__title {
+		color: $color;
+		font-size: $font-titleSize;
+		font-family: $font-titleFamily;
+	}
+	&__subtitle {
+		color: $color;
+		font-size: $font-subtitleSize;
+		font-family: $font-titleFamily;
+	}
+	&__list {
+		color: #fff;
+		font-family: $font-titleFamily;
+		list-style: none;
+	}
+	@media (max-width: 835px) {
+		margin-top: 30px;
+	}
+}

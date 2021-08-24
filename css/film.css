@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Georama:wght@300&family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Bungee+Shade&display=swap");
+/* Variables */
+/* Mixins */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hidde {
+  display: none;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 11vh;
+}
+
+.nav {
+  width: 1280px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info {
+  font-family: "Georama", sans-serif;
+  font-size: 20px;
+}
+
+.info__link {
+  text-decoration: none;
+  color: #f2f2f2;
+  margin: 0 20px 0;
+}
+
+@media (max-width: 900px) {
+  .info {
+    display: none;
+    position: absolute;
+    right: 0px;
+    height: 50vh;
+    top: 9vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    z-index: 100;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-transform: translateY(-120%);
+            transform: translateY(-120%);
+    -webkit-transition: -webkit-transform 0.6s ease-in;
+    transition: -webkit-transform 0.6s ease-in;
+    transition: transform 0.6s ease-in;
+    transition: transform 0.6s ease-in, -webkit-transform 0.6s ease-in;
+  }
+}
+
+@media (max-width: 800px) {
+  .info {
+    display: none;
+    position: absolute;
+    right: 0px;
+    height: 50vh;
+    top: 11vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    z-index: 100;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-transform: translateY(-120%);
+            transform: translateY(-120%);
+    -webkit-transition: -webkit-transform 0.6s ease-in;
+    transition: -webkit-transform 0.6s ease-in;
+    transition: transform 0.6s ease-in;
+    transition: transform 0.6s ease-in, -webkit-transform 0.6s ease-in;
+  }
+}
+
+.lists-active {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  color: #f2f2f2;
+}
+
+@media (max-width: 900px) {
+  .hamburger {
+    display: block;
+    margin-left: 30px;
+  }
+}
+
+.hamburger__icon {
+  font-size: 28px;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 13%;
+      flex-basis: 13%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 20px;
+}
+
+@media (max-width: 900px) {
+  .search {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
+}
+
+@media (max-width: 640px) {
+  .search {
+    -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.search__icon {
+  color: #f2f2f2;
+  font-size: "Bungee Shade", cursive;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .search__icon {
+    margin-left: 5px;
+  }
+}
+
+.search__link {
+  text-decoration: none;
+  font-size: 20px;
+  color: #f2f2f2;
+  font-family: "Georama", sans-serif;
+}
+
+@media (max-width: 900px) {
+  .search__link {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 640px) {
+  .search__link {
+    margin-left: 5px;
+  }
+}
+
+.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #141414;
+  -webkit-box-shadow: inset 0 0 190px 150px #0a0a0a;
+          box-shadow: inset 0 0 190px 150px #0a0a0a;
+  background-image: url("https://www.tuwroclaw.com/pliki/duze_zdjecia/muzyka/chaplin.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 850px) {
+  body {
+    min-height: 130vh;
+  }
+}
+
+.swiper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  overflow-x: hidden;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 835px) {
+  .swiper {
+    position: static;
+    margin-top: 90px;
+  }
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 350px;
+  height: 250px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.charli-info {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.charli {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.chaplin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .chaplin {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.biography {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  line-height: 1.7;
+  letter-spacing: 0.8px;
+}
+
+.biography__title {
+  color: #f2f2f2;
+  font-size: 26px;
+  font-family: "Georama", sans-serif;
+}
+
+.biography__subtitle {
+  color: #f2f2f2;
+  font-size: 20px;
+  font-family: "Georama", sans-serif;
+}
+
+.biography__text {
+  color: #fff;
+  font-family: "Georama", sans-serif;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 10px;
+}
+
+@media (max-width: 1024px) {
+  .biography__text {
+    margin-left: 20px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .biography__text {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-right: 20px;
+  }
+}
+
+.filmography {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  line-height: 1.7;
+  letter-spacing: 0.8px;
+}
+
+.filmography__title {
+  color: #f2f2f2;
+  font-size: 26px;
+  font-family: "Georama", sans-serif;
+}
+
+.filmography__subtitle {
+  color: #f2f2f2;
+  font-size: 20px;
+  font-family: "Georama", sans-serif;
+}
+
+.filmography__list {
+  color: #fff;
+  font-family: "Georama", sans-serif;
+  list-style: none;
+}
+
+@media (max-width: 835px) {
+  .filmography {
+    margin-top: 30px;
+  }
+}
+/*# sourceMappingURL=film.css.map */

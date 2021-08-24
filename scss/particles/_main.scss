@@ -1,0 +1,151 @@
+.main {
+	margin-top: 60px;
+	min-height: 75vh;
+
+	@media (max-width: 767px) {
+		margin-top: 20px;
+	}
+}
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	@media (max-width: 767px) {
+		justify-content: center;
+	}
+}
+
+.line {
+	width: 5px;
+	height: 75vh;
+}
+
+.aside {
+	flex-basis: 10%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	@media (max-width: 1024px) {
+		order: 3;
+		flex-grow: 1;
+		margin-top: 20px;
+	}
+	&__line {
+		height: 600px;
+		align-self: center;
+		width: 1px;
+		background-color: $color-menu;
+		@media (max-width: 1024px) {
+			display: none;
+		}
+	}
+	&__media {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		justify-content: center;
+		@media (max-width: 1024px) {
+			flex-direction: row;
+			height: auto;
+		}
+	}
+	&__link {
+		transform: rotate(-90deg);
+		text-decoration: none;
+		color: $color-menu;
+		margin: 50px 10px 40px 10px;
+		font-size: $font-menu;
+		font-family: $font-menuFamily;
+		transition: 0.4s ease;
+		@media (max-width: 1024px) {
+			transform: rotate(0deg);
+		}
+	}
+
+	&__blue:hover {
+		color: rgb(94, 64, 248);
+	}
+
+	&__red:hover {
+		color: rgb(240, 23, 23);
+	}
+	&__yellow:hover {
+		color: rgb(145, 20, 246);
+	}
+}
+
+.about {
+	margin: 60px 0;
+	flex-basis: 45%;
+	text-align: center;
+	line-height: $line-hight;
+	@media (max-width: 1024px) {
+		order: -1;
+	}
+	@media (max-width: 800px) {
+		flex-basis: 100%;
+	}
+	&__title {
+		font-size: $main-titleSize;
+		font-family: $font-main;
+		@media (max-width: 1024px) {
+			font-size: 40px;
+		}
+	}
+	&__subtitle {
+		font-size: 35px;
+		font-family: $main-subtitle;
+		@media (max-width: 1024px) {
+			font-size: 28px;
+		}
+	}
+	&__text {
+		font-size: $font-menu;
+		font-family: $main-subtitle;
+		margin: 10px 0 50px;
+		@media (max-width: 1024px) {
+			font-size: 16px;
+		}
+	}
+}
+
+.link {
+	text-decoration: none;
+	padding: 9px 45px;
+	border: 1px solid $color-menu;
+	border-radius: 30px;
+	color: $color-menu;
+	font-size: $font-button;
+	transition: 0.4s ease;
+	@media (max-width: 1024px) {
+		order: 2;
+		font-size: 27px;
+	}
+}
+
+.link:hover {
+	background-color: $color-menu;
+	color: $color;
+}
+
+.picture {
+	flex-basis: 44%;
+	height: 480px;
+	display: flex;
+	align-self: center;
+	&__bg {
+		height: auto;
+		width: 100%;
+	}
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	@media (max-width: 1024px) {
+		flex-grow: 1;
+	}
+	@media (max-width: 800px) {
+		flex-basis: 100%;
+	}
+}

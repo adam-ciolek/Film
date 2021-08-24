@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Georama:wght@300&family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Bungee+Shade&display=swap");
+/* Variables */
+
+$font-menu: 20px;
+$font-titleSize: 26px;
+$font-subtitleSize: 20px;
+$font-iconSize: 28px;
+$font-button: 32px;
+$main-titleSize: 66px;
+
+$font-weight: 300;
+
+$line-hight: 1.7;
+
+$main-subtitle: "Belleza", sans-serif;
+$font-main: "Bungee Shade", cursive;
+$font-titleFamily: "Georama", sans-serif;
+$font-menuFamily: "Playfair Display", serif;
+
+$color-baground: rgb(248, 248, 248);
+$color: rgb(242, 242, 242);
+$color-menu: rgb(20, 20, 20);
+
+// Variables log in
+$color-bg-log-in: rgb(67, 67, 67);
+$color-bg-form: rgb(39, 39, 39);
+$border-color: rgb(67, 67, 67);
+$color-hover-forgot: rgb(18, 194, 249);
+$color-hover-google: rgb(240, 23, 23);
+$color-hover-facebook: rgb(54, 14, 253);
+$font-btn-size: 20px;
+$font-input-size: 20px;
+
+// Variables Sign up
+$color-border-outline: rgb(167, 167, 167);
+
+/* Mixins */
+
+@mixin container {
+	width: 1280px;
+	margin: 0 auto;
+	@content;
+}
+
+@mixin wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	@content;
+}
+
+@mixin btn {
+	transition: 0.4s ease;
+	border: 3px solid $border-color;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: $font-btn-size;
+	text-decoration: none;
+	margin: 20px;
+	color: $color;
+	font-family: $font-titleFamily;
+	@content;
+}
+
+@mixin form {
+	background-color: $color-bg-log-in;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	text-align: center;
+}
+
+// Contact
+
+@mixin contact {
+	line-height: 1.7;
+	letter-spacing: 0.8px;
+	font-family: $font-titleFamily;
+}

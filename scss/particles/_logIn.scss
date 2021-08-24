@@ -1,0 +1,97 @@
+.log-in {
+	@include form;
+}
+
+.log {
+	width: 440px;
+	&__title {
+		color: $color;
+		text-transform: uppercase;
+		font-family: $main-subtitle;
+	}
+	@media (max-width: 800px) {
+		width: 400px;
+		font-size: 15px;
+	}
+	@media (max-width: 440px) {
+		font-size: 13px;
+		width: 300px;
+	}
+}
+
+.form {
+	padding: 40px;
+	background-color: $color-bg-form;
+	&__link {
+		a {
+			text-decoration: none;
+			color: $color;
+			font-family: $font-titleFamily;
+			transition: 0.4s ease;
+			&:hover {
+				color: $color-hover-forgot;
+			}
+		}
+	}
+}
+
+.links {
+	display: flex;
+	flex-direction: column;
+	margin: 30px;
+	&__google {
+		@include btn;
+		&:hover {
+			color: $color-hover-google;
+			background-color: $border-color;
+		}
+		@media (max-width: 800px) {
+			font-size: 16px;
+		}
+		@media (max-width: 440px) {
+			font-size: 14px;
+		}
+	}
+	&__facebook {
+		@include btn;
+		&:hover {
+			color: rgb(94, 64, 248);
+			background-color: $border-color;
+		}
+		@media (max-width: 800px) {
+			font-size: 16px;
+		}
+		@media (max-width: 440px) {
+			font-size: 14px;
+		}
+	}
+}
+
+.form-box {
+	margin: 10px;
+
+	&__input {
+		margin: 10px;
+		width: 76%;
+		padding: 10px 20px;
+		outline: none;
+		font-size: $font-input-size;
+		font-family: $font-titleFamily;
+		@media (max-width: 800px) {
+			font-size: 16px;
+		}
+		@media (max-width: 440px) {
+			font-size: 14px;
+		}
+	}
+}
+
+.form-btn {
+	@include btn {
+		background-color: $color-bg-form;
+		cursor: pointer;
+		&:hover {
+			background-color: $border-color;
+		}
+	}
+}

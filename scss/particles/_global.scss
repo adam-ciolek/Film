@@ -1,0 +1,29 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: $color-baground;
+}
+
+.container {
+	@include container;
+	// width: 1280px;
+	// margin: 0 auto;
+}
+
+.wrapper {
+	@include wrapper {
+		align-items: center;
+	}
+}
+
+.active {
+	display: flex;
+}
+
+.hidde {
+	display: none;
+}

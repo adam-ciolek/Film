@@ -1,0 +1,97 @@
+.sign-up {
+	@include form;
+}
+
+.sign {
+	width: 440px;
+	&__title {
+		color: $color;
+		text-transform: uppercase;
+		font-family: $main-subtitle;
+		@media (max-width: 800px) {
+			font-size: 26px;
+		}
+		@media (max-width: 440px) {
+			font-size: 20px;
+		}
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+		text-align: start;
+		margin: 20px 0;
+		color: $color;
+		font-size: $font-input-size;
+		font-family: $font-titleFamily;
+		@media (max-width: 800px) {
+			font-size: 20px;
+		}
+		@media (max-width: 440px) {
+			font-size: 16px;
+		}
+	}
+	&__form:nth-child(6) {
+		flex-direction: row;
+		input {
+			align-self: center;
+		}
+		@media (max-width: 800px) {
+			font-size: 15px;
+			align-self: center;
+		}
+		@media (max-width: 440px) {
+			font-size: 11px;
+		}
+	}
+	&__input {
+		margin: 10px 0;
+		outline: none;
+		padding: 10px 20px;
+		font-size: $font-input-size;
+		font-family: $font-titleFamily;
+		border-radius: 5px;
+		&:focus {
+			border: 2px solid $color-border-outline;
+		}
+		@media (max-width: 800px) {
+			font-size: 20px;
+		}
+		@media (max-width: 440px) {
+			font-size: 16px;
+		}
+	}
+	@media (max-width: 800px) {
+		width: 400px;
+	}
+	@media (max-width: 440px) {
+		width: 300px;
+	}
+	&__text {
+		font-size: 14px;
+		padding: 0 20px;
+		font-family: $font-titleFamily;
+	}
+}
+
+.text {
+	align-self: center;
+	margin-left: 20px;
+}
+
+.form-btn {
+	@media (max-width: 800px) {
+		font-size: 20px;
+	}
+	@media (max-width: 440px) {
+		font-size: 17px;
+	}
+}
+
+.error {
+	border: 1px solid $color-hover-google;
+	box-shadow: 0 0 6px 0 $color-hover-google;
+}
+
+// .active {
+// 	display: flex;
+// }

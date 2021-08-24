@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Films</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="./css/film.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="nav">
+      <div class="hamburger">
+        <i  class="fas fa-bars hamburger__icon"></i>
+      </div>
+      <div class="info">
+        <a class="info__link" href="index.html">Home</a>
+        <a class="info__link" href="#">Movies</a>
+        <a class="info__link" href="#">TV Shows</a>
+        <a class="info__link" href="#">Documentaries</a>
+      </div>
+      <div class="search">
+        <i class="fas fa-search search__icon"></i>
+        <i class="fas fa-bell search__icon"></i>
+        <a class="search__link" href="singUp.html">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="charli">
+    <div class="charli-info">
+      <div class="chaplin">
+        <div class="biography">
+          <h1 class="biography__title">Charlie Chaplin</h1>
+          <h2 class="biography__subtitle">The 50 Greatest American Screen Legends</h2>
+          <p class="biography__text"> Was an English comic actor, filmmaker, and composer who rose to fame in the era of silent film. He became a worldwide icon through his screen persona, The Tramp, and is considered one of the most important figures in the history of the film industry. His career spanned more than 75 years, from childhood in the Victorian era until a year before his death in 1977, and encompassed both adulation and controversy.</p>
+        </div>
+        <div class="filmography">
+          <h1 class="filmography__title">Filmography</h1>
+          <h2 class="filmography__subtitle">Directed features:</h2>
+          <ul class="filmography__list">
+            <li class="filmography__item">The Kid (1921)</li>
+            <li class="filmography__item">A Woman of Paris (1923)</li>
+            <li class="filmography__item">The Gold Rush (1925)</li>
+            <li class="filmography__item">The Circus (1928)</li>
+            <li class="filmography__item">City Lights (1931)</li>
+            <li class="filmography__item">Modern Times (1936)</li>
+            <li class="filmography__item">The Great Dictator (1940)</li>
+            <li class="filmography__item">Monsieur Verdoux (1947)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <section class="slider"> 
+    <div class="swiper">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide"><a href=""><img src="https://s3.amazonaws.com/criterion-production/editorial_content_posts/hero/6607-/81fvv4K816rHfY2RSObQcROBV7bkjh_original.jpg" alt=""></a></li>
+        <li class="swiper-slide"><a href=""><img src="https://i.pinimg.com/736x/7c/b6/26/7cb626d8d8575ef5e51668827c13770a.jpg" alt=""></a></li>
+        <li class="swiper-slide"><a href=""><img src="https://cdn.images.express.co.uk/img/dynamic/36/590x/02f245living-457514.jpg" alt=""></a></li>
+        <li class="swiper-slide"><a href=""><img src="https://moma.org/wp/inside_out/wp-content/uploads/2012/04/Limelight-Claire-Bloom-and-Charlie-Chaplin.jpg" alt=""></a></li>
+        <li class="swiper-slide"><a href=""></a><img src="https://moma.org/wp/inside_out/wp-content/uploads/2010/11/Modern-Times.jpg" alt=""></li> 
+      </ul>
+        
+        <div class="swiper-pagination"></div> 
+    </div>
+  </section> 
+
+
+    <script src="./js/film.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script> var swiper = new Swiper('.swiper', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          rotate: 20,
+          stretch: 0,
+          depth: 200,
+          modifier: 1,
+          slideShadows: true,
+        },
+        loop: true,
+      });</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.footer {
+	background-color: $color-menu;
+	color: $color;
+	height: 71px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	font-size: $font-main;
+	@media (max-width: 1024px) {
+		font-size: 13px;
+
+		order: 4;
+	}
+	@media (max-width: 800px) {
+		font-size: 11px;
+		height: 40px;
+		order: 4;
+	}
+}
